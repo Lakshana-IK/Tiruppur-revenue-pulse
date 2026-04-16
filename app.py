@@ -65,6 +65,7 @@ def weather_tag(weather, temp):
 st.title("🧵 Tiruppur Textile Revenue Pulse")
 st.caption("Textile Sales Command Center — Tiruppur Region")
 st.caption(f"Last updated: {datetime.datetime.now().strftime('%H:%M:%S')}")
+st.success("System Status: LIVE ●")
 
 # ------------------ LOAD DATA ------------------
 import random
