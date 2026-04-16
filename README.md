@@ -1,37 +1,70 @@
 # 🧵 Tiruppur Textile Revenue Pulse
 
-A real-time sales dashboard built using Streamlit that simulates live textile sales and integrates weather data to analyze its impact on business performance.
+A real-time **Sales Command Center Dashboard** built using Streamlit to simulate live textile sales and analyze the impact of weather conditions on business performance.
 
+---
 
 ## 📌 Project Overview
 
-This project was developed as part of a 3-day sprint to build a **live operational monitoring dashboard**.
-It simulates real-time sales and displays insights in a **war-room style interface** for quick decision-making.
+This project was developed as part of a 3-day sprint to build a **live operational monitoring system**.
+It replicates a **War Room UI**, enabling real-time tracking of sales, identifying trends, and supporting quick decision-making.
 
+---
+
+## 🎯 Objectives
+
+* Simulate real-time sales data
+* Build a live dashboard with auto-refresh
+* Track key business KPIs
+* Integrate weather data to analyze external impact
+* Design a War Room-style command center UI
+
+---
 
 ## 🚀 Features
 
-* 🔄 Auto-refreshing dashboard (no manual reload)
+* 🔄 Real-time auto-refresh dashboard
 * 💰 Total Revenue tracking
 * 📦 Order Volume monitoring
 * 📊 Average Order Value calculation
-* 🧵 Product Performance analysis
+* 🧵 Product Performance insights
 * 🌍 Revenue breakdown by city
 * 🌦️ Weather integration (Rain / Heat / Cloud)
 * 📈 Real-time revenue trend (interactive chart)
 * 📊 Revenue by product (bar chart)
 * 📋 Live sales feed with weather impact
-* 🚨 Alert system (High / Low / Normal sales)
+* 🚨 Alert system (High / Low / Normal sales activity)
+* 🟢 System Status indicator (LIVE)
 
+---
+
+## 🔧 Technical Summary
+
+This project is built using Streamlit for the frontend and Python for backend logic.
+Sales data is dynamically generated within the application to simulate real-time updates.
+Pandas is used for data processing, Plotly for visualization, and OpenWeatherMap API is used to fetch live weather conditions.
+
+---
+
+## ▶️ Dashboard Walkthrough
+
+* KPI cards display total revenue, order volume, average order value, top product, and top city
+* Revenue by city shows geographic performance along with weather conditions
+* Product performance highlights best-selling textile items
+* Real-time charts visualize revenue trends and product-wise distribution
+* Live sales feed displays recent transactions with weather-based impact
+
+---
 
 ## 🗂️ Project Structure
 
 tiruppur-revenue-pulse/
 │
 ├── app.py                # Main Streamlit dashboard
-├── requirements.txt     # Required Python libraries
+├── requirements.txt     # Python dependencies
 ├── README.md            # Project documentation
 
+---
 
 ## 🛠️ Tech Stack
 
@@ -39,9 +72,10 @@ tiruppur-revenue-pulse/
 * Streamlit
 * Pandas
 * Plotly
-* Requests (Weather API)
+* Requests
 * OpenWeatherMap API
 
+---
 
 ## ⚙️ How to Run Locally
 
@@ -57,52 +91,46 @@ python -m streamlit run app.py
 
 http://localhost:8501
 
+---
+
+## 🌐 Live Demo
+
+🔗 https://tiruppur-revenue-pulse-kh2zhzfj5l2cfels9vjhg9.streamlit.app/
+
+---
 
 ## 🌦️ Weather Integration
 
-This dashboard uses the OpenWeatherMap API to fetch live weather data for each city.
+| Condition        | Indicator | Impact             |
+| ---------------- | --------- | ------------------ |
+| Rain / Storm     | 🌧️       | Sales may decrease |
+| High Temperature | 🔥        | Increased sales    |
+| Normal Weather   | ☁️        | Stable activity    |
 
-| Weather Condition | Indicator | Impact             |
-| ----------------- | --------- | ------------------ |
-| Rain / Storm      | 🌧️       | Sales may decrease |
-| High Temperature  | 🔥        | Increased sales    |
-| Normal Weather    | ☁️        | Stable activity    |
+---
 
+## 📊 Key Insights
 
+* Weather conditions influence sales patterns
+* Certain products perform better in specific conditions
+* City-level analysis helps identify high-performing regions
+* Real-time monitoring enables faster business decisions
 
-## 📊 Dashboard Sections
-
-1. KPI Cards (Revenue, Orders, Avg Value, Top Product, Top City)
-2. Alert System
-3. Revenue by City + Weather
-4. Product Performance
-5. Real-Time Revenue Trend
-6. Revenue by Product
-7. Live Sales Feed
-   
-
-## 📁 Data Fields
-
-| Field   | Description             |
-| ------- | ----------------------- |
-| Time    | Timestamp of sale       |
-| Product | Textile item sold       |
-| Price   | Sale value              |
-| City    | Location of sale        |
-| Weather | Current weather         |
-| Impact  | Weather impact on sales |
-
+---
 
 ## 👩‍💻 Developed By
 
-Lakshana
+**Lakshana**
 
-## 📅 Submission
+---
+
+## 📅 Submission Details
 
 Project: Live Revenue Pulse
+---
 
 ## 📬 Notes
 
-* This project simulates live data for demonstration purposes
-* Designed to resemble a real-world business command center dashboard
-
+* This project simulates real-time data for demonstration purposes
+* Designed to mimic a real-world business command center dashboard
+* Built with a focus on clarity, usability, and decision-making
